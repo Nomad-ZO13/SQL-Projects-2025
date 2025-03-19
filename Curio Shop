@@ -1,0 +1,22 @@
+CREATE TABLE My_Store (id INTEGER PRIMARY KEY, name TEXT, in_stock INTEGER, price INTEGER, color TEXT);
+
+INSERT INTO My_Store VALUES (1, "Amethyst", 17, 13.00, "Purple"); 
+INSERT INTO My_Store VALUES (2, "Sapphire", 10, 40.00, "Yellow"); 
+INSERT INTO My_Store VALUES (3, "Garnet", 28, 13.00, "Red"); 
+INSERT INTO My_Store VALUES (4, "Ruby", 17, 43.00, "Pink"); 
+INSERT INTO My_Store VALUES (5, "Emerald", 14, 31.99, "Green"); 
+INSERT INTO My_Store VALUES (6, "Lapis", 7, 13.00, "Blue");
+INSERT INTO My_Store VALUES (7, "Quartz", 17, 43.00, "Clear"); 
+INSERT INTO My_Store VALUES (8, "Jade", 4, 100.99, "Green"); 
+INSERT INTO My_Store VALUES (9, "Diamond", 45, 30000.00, "Rainbow");
+INSERT INTO My_Store VALUES (10, "Rose Quartz", 200, 10.99,"Rose");
+INSERT INTO My_Store VALUES (11, "Agate", 12, 43.00, "Orange");
+INSERT INTO My_Store VALUES (12, "Shark Teeth", 250, 27.00, "Aged"); 
+INSERT INTO My_Store VALUES (13, "Obsidian", 34, 12.99, "Black");
+INSERT INTO My_Store VALUES (14, "Calcite", 45, 300.00, "Snow");
+INSERT INTO My_Store VALUES (15, "Amber", 200, 567.00, "Buggy");
+
+SELECT * FROM My_Store ORDER BY price;
+SELECT * FROM My_Store WHERE name = "Garnet";
+SELECT SUM (in_stock) FROM MY_Store WHERE name = "Ruby";
+
