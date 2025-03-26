@@ -1,0 +1,26 @@
+/* What does the app's SQL look like? */
+CREATE TABLE weightloss (
+entry_id INTEGER PRIMARY KEY AUTOINCREMENT,
+date TEXT,
+weight NUMERIC,
+calintake NUMERIC,
+timeofday TEXT,
+change TEXT,
+clothed TEXT,
+logged TEXT,
+emotion TEXT);
+
+INSERT INTO weightloss (date, weight, calintake, timeofday, change, clothed, logged, emotion) VALUES ("3/26/2025", 187, 2375, "AFTERNOON", "None", "No", "Yes", "Upset");
+INSERT INTO weightloss (date, weight, calintake, timeofday, change, clothed, logged, emotion) VALUES ("3/30/2025", 182, 2200, "AFTERNOON", "loss", "No", "Yes", "Determined");
+INSERT INTO weightloss (date, weight, calintake, timeofday, change, clothed, logged, emotion) VALUES ("4/04/2025", 179, 2000, "AFTERNOON", "loss", "No", "Yes", "Hungry");
+INSERT INTO weightloss (date, weight, calintake, timeofday, change, clothed, logged, emotion) VALUES ("4/10/2025", 181, 2000, "AFTERNOON", "gain", "No", "Yes", "Upset");
+INSERT INTO weightloss (date, weight, calintake, timeofday, change, clothed, logged, emotion) VALUES ("4/04/2025", 179, 2000, "AFTERNOON", "loss", "No", "Yes", "Hungry");
+INSERT INTO weightloss (date, weight, calintake, timeofday, change, clothed, logged, emotion) VALUES ("4/16/2025", 165, 1800, "MORNING", "loss", "No", "Yes", "Happy");
+INSERT INTO weightloss (date, weight, calintake, timeofday, change, clothed, logged, emotion) VALUES ("5/05/2025", 155, 1650, "EVENING", "loss", "No", "Yes", "EXCITED");
+
+UPDATE weightloss SET clothed= "YES" where entry_id= 5;
+
+DELETE FROM weightloss where entry_id=6;
+
+select * from weightloss; 
+
